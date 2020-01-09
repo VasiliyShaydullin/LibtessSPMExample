@@ -3,19 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514D430623C70EE50043DC94 /* LibtessSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 514D430523C70EE50043DC94 /* LibtessSPM */; };
+		51A4979B23B50F0900A3E6D6 /* MBETextTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4979A23B50F0900A3E6D6 /* MBETextTypes.swift */; };
+		51A4979E23B5172900A3E6D6 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 51A4979D23B5172900A3E6D6 /* Shaders.metal */; };
+		51FDFA3F23C701B3001931AA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 51FDFA3E23C701B3001931AA /* README.md */; };
+		51FDFA4323C70B4F001931AA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 51FDFA4223C70B4F001931AA /* LICENSE */; };
 		51FEF78823B50C37009AC7BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEF78723B50C37009AC7BE /* AppDelegate.swift */; };
 		51FEF78A23B50C37009AC7BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEF78923B50C37009AC7BE /* SceneDelegate.swift */; };
 		51FEF78C23B50C37009AC7BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEF78B23B50C37009AC7BE /* ViewController.swift */; };
 		51FEF78F23B50C37009AC7BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FEF78D23B50C37009AC7BE /* Main.storyboard */; };
 		51FEF79123B50C3B009AC7BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FEF79023B50C3B009AC7BE /* Assets.xcassets */; };
 		51FEF79423B50C3B009AC7BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FEF79223B50C3B009AC7BE /* LaunchScreen.storyboard */; };
+		51FEF79C23B50C6E009AC7BE /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEF79B23B50C6E009AC7BE /* Renderer.swift */; };
+		51FEF79F23B50D28009AC7BE /* MBETextMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEF79E23B50D28009AC7BE /* MBETextMesh.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51A4979A23B50F0900A3E6D6 /* MBETextTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBETextTypes.swift; sourceTree = "<group>"; };
+		51A4979C23B516CE00A3E6D6 /* LibtessSPMExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LibtessSPMExample.entitlements; sourceTree = "<group>"; };
+		51A4979D23B5172900A3E6D6 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		51FDFA3E23C701B3001931AA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		51FDFA4223C70B4F001931AA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		51FEF78423B50C37009AC7BE /* LibtessSPMExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibtessSPMExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FEF78723B50C37009AC7BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51FEF78923B50C37009AC7BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,9 @@
 		51FEF79023B50C3B009AC7BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51FEF79323B50C3B009AC7BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51FEF79523B50C3B009AC7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51FEF79B23B50C6E009AC7BE /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		51FEF79D23B50CC4009AC7BE /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		51FEF79E23B50D28009AC7BE /* MBETextMesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBETextMesh.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514D430623C70EE50043DC94 /* LibtessSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +56,8 @@
 		51FEF77B23B50C37009AC7BE = {
 			isa = PBXGroup;
 			children = (
+				51FDFA3E23C701B3001931AA /* README.md */,
+				51FDFA4223C70B4F001931AA /* LICENSE */,
 				51FEF78623B50C37009AC7BE /* LibtessSPMExample */,
 				51FEF78523B50C37009AC7BE /* Products */,
 			);
@@ -56,9 +74,15 @@
 		51FEF78623B50C37009AC7BE /* LibtessSPMExample */ = {
 			isa = PBXGroup;
 			children = (
+				51A4979C23B516CE00A3E6D6 /* LibtessSPMExample.entitlements */,
 				51FEF78723B50C37009AC7BE /* AppDelegate.swift */,
 				51FEF78923B50C37009AC7BE /* SceneDelegate.swift */,
 				51FEF78B23B50C37009AC7BE /* ViewController.swift */,
+				51FEF79E23B50D28009AC7BE /* MBETextMesh.swift */,
+				51A4979A23B50F0900A3E6D6 /* MBETextTypes.swift */,
+				51FEF79B23B50C6E009AC7BE /* Renderer.swift */,
+				51FEF79D23B50CC4009AC7BE /* Common.h */,
+				51A4979D23B5172900A3E6D6 /* Shaders.metal */,
 				51FEF78D23B50C37009AC7BE /* Main.storyboard */,
 				51FEF79023B50C3B009AC7BE /* Assets.xcassets */,
 				51FEF79223B50C3B009AC7BE /* LaunchScreen.storyboard */,
@@ -83,6 +107,9 @@
 			dependencies = (
 			);
 			name = LibtessSPMExample;
+			packageProductDependencies = (
+				514D430523C70EE50043DC94 /* LibtessSPM */,
+			);
 			productName = LibtessSPMExample;
 			productReference = 51FEF78423B50C37009AC7BE /* LibtessSPMExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +138,9 @@
 				Base,
 			);
 			mainGroup = 51FEF77B23B50C37009AC7BE;
+			packageReferences = (
+				514D430423C70EE50043DC94 /* XCRemoteSwiftPackageReference "LibtessSPM" */,
+			);
 			productRefGroup = 51FEF78523B50C37009AC7BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +157,8 @@
 			files = (
 				51FEF79423B50C3B009AC7BE /* LaunchScreen.storyboard in Resources */,
 				51FEF79123B50C3B009AC7BE /* Assets.xcassets in Resources */,
+				51FDFA3F23C701B3001931AA /* README.md in Resources */,
+				51FDFA4323C70B4F001931AA /* LICENSE in Resources */,
 				51FEF78F23B50C37009AC7BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FEF79F23B50D28009AC7BE /* MBETextMesh.swift in Sources */,
+				51A4979E23B5172900A3E6D6 /* Shaders.metal in Sources */,
+				51A4979B23B50F0900A3E6D6 /* MBETextTypes.swift in Sources */,
+				51FEF79C23B50C6E009AC7BE /* Renderer.swift in Sources */,
 				51FEF78C23B50C37009AC7BE /* ViewController.swift in Sources */,
 				51FEF78823B50C37009AC7BE /* AppDelegate.swift in Sources */,
 				51FEF78A23B50C37009AC7BE /* SceneDelegate.swift in Sources */,
@@ -284,7 +320,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LibtessSPMExample/LibtessSPMExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = R5P42D7263;
 				INFOPLIST_FILE = LibtessSPMExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -293,6 +331,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dxfproviewer.LibtessSPMExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = LibtessSPMExample/Common.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,7 +342,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LibtessSPMExample/LibtessSPMExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = R5P42D7263;
 				INFOPLIST_FILE = LibtessSPMExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +353,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dxfproviewer.LibtessSPMExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = LibtessSPMExample/Common.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +382,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		514D430423C70EE50043DC94 /* XCRemoteSwiftPackageReference "LibtessSPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VasiliyShaydullin/LibtessSPM.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		514D430523C70EE50043DC94 /* LibtessSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 514D430423C70EE50043DC94 /* XCRemoteSwiftPackageReference "LibtessSPM" */;
+			productName = LibtessSPM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 51FEF77C23B50C37009AC7BE /* Project object */;
 }
